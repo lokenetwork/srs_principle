@@ -1,0 +1,41 @@
+v=0
+o=SRS/6.0.48(Bee) 107545981094528 2 IN IP4 0.0.0.0
+s=SRSPublishSession
+t=0 0
+a=ice-lite
+a=group:BUNDLE 0 1
+a=msid-semantic: WMS live/livestream
+m=audio 9 UDP/TLS/RTP/SAVPF 111
+c=IN IP4 0.0.0.0
+a=ice-ufrag:m44mk792
+a=ice-pwd:1259k0338o03527p68540t0fod51348l
+a=fingerprint:sha-256 D8:30:31:86:10:B9:3F:6C:B1:D5:8F:B6:20:C4:18:2A:2C:70:F1:21:E5:66:2B:61:1D:AA:5D:C5:0B:F3:C0:6E
+a=setup:passive
+a=mid:0
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=recvonly
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=candidate:0 1 udp 2130706431 192.168.0.121 8000 typ host generation 0
+m=video 9 UDP/TLS/RTP/SAVPF 106 112
+c=IN IP4 0.0.0.0
+a=ice-ufrag:m44mk792
+a=ice-pwd:1259k0338o03527p68540t0fod51348l
+a=fingerprint:sha-256 D8:30:31:86:10:B9:3F:6C:B1:D5:8F:B6:20:C4:18:2A:2C:70:F1:21:E5:66:2B:61:1D:AA:5D:C5:0B:F3:C0:6E
+a=setup:passive
+a=mid:1
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=recvonly
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:106 H264/90000
+a=rtcp-fb:106 transport-cc
+a=rtcp-fb:106 nack
+a=rtcp-fb:106 nack pli
+a=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:112 red/90000
+a=candidate:0 1 udp 2130706431 192.168.0.121 8000 typ host generation 0
+  
